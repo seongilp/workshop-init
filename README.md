@@ -27,10 +27,10 @@ IP를 할당 받았다면 크롬 브라우저에서 `http://{할당받은 IP}:42
   - [로컬 볼륨 플러그인 설치](./3_1_local_path_provisioner.md)
 - [웹용 Visual Studio Code 서버 설치](./99_code_server.md)
 
-## 문의 & 궁금한 사항
-
-페이스북 메신저 또는 트위터로 연락주세요.
-
-- https://www.facebook.com/subicura
-- https://twitter.com/subicura
-- subicura(at)subicura(dot)com
+----
+```
+> semanage fcontext -a -t bin_t /usr/local/bin/k3s
+> restorecon -v /usr/local/bin/k3s
+> systemctl start k3s
+> systemctl status k3s
+```
